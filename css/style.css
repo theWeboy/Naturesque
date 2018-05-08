@@ -110,6 +110,19 @@ body{
     }
 }
 
+/* Button Animation*/
+
+@keyframes moveInUp {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 /* link is a special state of the selector when it is an anchor element */
 .btn:link, .btn:visited{
     text-transform: uppercase;
@@ -118,6 +131,7 @@ body{
     display: inline-block;
     border-radius: 50px;
     transition: all 0.2s;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
 
 .btn:hover{
@@ -134,4 +148,9 @@ body{
 .btn-white{
     background-color: #fff;
     color: #777;
+}
+
+.btn-animated{
+    animation: moveInUp .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
