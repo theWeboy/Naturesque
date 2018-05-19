@@ -12,6 +12,7 @@ $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 $color-grey-dark: #777;
 $color-white: #fff;
+$color-black: #000;
 
 *, *::after, *::before{
   margin: 0;
@@ -40,25 +41,27 @@ html{
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0,100% 0,100% 80vh,0 100%);
+
+  &__logo-box{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo{
+    height: 3.5rem;
+  }
+
+  &__text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+
 }
 
-.header__logo-box{
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo{
-  height: 3.5rem;
-}
-
-.header__text-box{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
 
 .heading-primary{
   color: $color-white;
@@ -148,13 +151,13 @@ html{
 
 .btn:hover{
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+  box-shadow: 0 1rem 2rem rgba($color-black,.2);
 }
 
 /* When button is clicked*/
 .btn:active{
   transform: translateY(-1px);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  box-shadow: 0 .5rem 1rem rgba($color-black,.2);
 }
 
 .btn--white{
