@@ -20,8 +20,6 @@
     margin: 0 auto; // Center the element
   }
 
-
-
   @include clearfix;
 
   [class^="col-"]{    // Selects all the classes starting with "col-"
