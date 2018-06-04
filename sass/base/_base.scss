@@ -29,3 +29,9 @@ html{
     font-size: 75%; // 1 rem = 12px , 12/16
   }
 }
+
+::selection{
+  background-color: $color-primary;
+  color: $color-white;
+}
+
