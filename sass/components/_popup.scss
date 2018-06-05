@@ -107,17 +107,16 @@
   }
 
   &__close{
-    &:link, &:visited{
-      color: $color-grey-dark;
-      position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
-      font-size: 3rem;
-      text-decoration: none;
-      display: inline-block;
-      line-height:1;
-    }
-
+    color: $color-grey-dark;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    line-height:1;
+    cursor: pointer;
+    
     &:hover{
       color: $color-primary-dark;
     }
